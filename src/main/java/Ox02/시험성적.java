@@ -11,14 +11,13 @@ public class 시험성적 {
 
     //Map의 순서보장을 위해 LinkedHashMap 사용
     public static LinkedHashMap<Integer, String> getMapScore() {
-        return new LinkedHashMap<>().putAll(
-                Map.of(
-                        90, "A"
-                        80, "B"
-                        70, "C"
-                        60, "D"
-                )
-        );
+        LinkedHashMap<Integer, String> linkedHashMap = new LinkedHashMap<>();
+        linkedHashMap.put(90,"A");
+        linkedHashMap.put(80,"B");
+        linkedHashMap.put(70,"C");
+        linkedHashMap.put(60,"D");
+
+        return linkedHashMap;
     }
 
     public static void main(String[] args) throws IOException {

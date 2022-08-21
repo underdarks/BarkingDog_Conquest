@@ -9,7 +9,10 @@ import java.util.stream.Stream;
 
 public class 시험성적 {
 
-    //Map의 순서보장을 위해 LinkedHashMap 사용
+    /**
+     * Map의 순서보장을 위해 LinkedHashMap 사용
+     * 구간별 점수에 대한 성적 결과값을 저장하는 자료
+     */
     public static LinkedHashMap<Integer, String> getMapScore() {
         LinkedHashMap<Integer, String> linkedHashMap = new LinkedHashMap<>();
         linkedHashMap.put(90,"A");

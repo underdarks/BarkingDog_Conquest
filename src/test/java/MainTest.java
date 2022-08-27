@@ -1,16 +1,22 @@
 import org.junit.jupiter.api.Test;
 
+import java.time.Duration;
+import java.time.Instant;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class MainTest {
 
     @Test
-    public void t(){
-        //given
+    public void 시간측정_테스트(){
         System.out.println("true = " + true);
 
+        Instant start = Instant.now();
 
-        //when
+        //로직....
 
-
-        //then
+        Instant finish = Instant.now();
+        System.out.println("소요 시간(ms) = " + Duration.between(start, finish).toMillis());
     }
 }
